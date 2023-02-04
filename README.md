@@ -1,0 +1,6 @@
+# Human-Detection-using-Aerial-Vehicle
+The project intends to provide a compact and efficient solution for allowing human detection in an environment on mobile computers using a camera. The entire setup is placed on on-board vehicles for real-time inference rather than relying on the traditional system of using a server running on the Ground Control Station for computation and processing. 
+
+The interest was to find the maximum frames per second that a human detection program could achieve while running live inference using a CSI-2 port camera, a GoPro, and a web camera using a Jetson Nano and Raspberry Pi without incurring severe loss in accuracy. The focus was to use pre-trained models to get a relative benchmark on the performance and decide which board would be better for the human detection task from an aerial vehicle. The step includes: Setting up the environment, Choosing the correct model, and Optimization. 
+
+Multiprocessing and communication via queues could increase the overall FPS of the live video stream with a minimal decline in the prediction FPS. Graphic Acceleration on the Jetson Nano board could be a significant booster to our inference but can cause it to heat very fast.
